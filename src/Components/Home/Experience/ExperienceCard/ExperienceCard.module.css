@@ -1,0 +1,45 @@
+.outerCard{
+    width: 32rem;
+    padding: 1rem;
+    box-shadow: none !important;
+    border-radius: 0rem !important;
+    margin: 1rem 0rem;
+}
+.card{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255 , 0.2);
+    width: 32rem;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 6rem;
+    padding: 1rem;
+}
+.heading{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.matter{
+    font-size: 1rem; 
+    width: 24rem;
+}
+.tech{
+    margin: 0.3rem;
+    color: gray;
+}
+.techUsed{
+    display: flex;
+    flex-direction: row;
+}

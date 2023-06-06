@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255 , 0.2);
+    width: 32rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.logo img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 6rem;
+    padding: 1rem;
+}
+.heading{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.matter{
+    font-size: 1rem; 
+}
