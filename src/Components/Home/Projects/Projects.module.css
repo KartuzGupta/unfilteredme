@@ -1,0 +1,21 @@
+.section{
+    background-color: var(--projects-back-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 6vw;
+    line-height: 7vw;
+    display: flex;
+    margin: 2rem 0rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,22 +1,18 @@
 .section{
     background-color: var(--experience-back-color);
-    width: 100vw;
-    display: grid;
-    grid-template-areas: 'h c';
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 .heading{
     font-family: 'Bungee Shade', cursive;
-    font-size: 5rem;
-    line-height: 6rem;
-    grid-area: h;
+    font-size: 6vw;
+    line-height: 7vw;
     display: flex;
-    margin-left: 5rem;
 }
 .cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    grid-area: c;
     font-family: 'Poppins', sans-serif;
 }

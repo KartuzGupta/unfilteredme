@@ -11,13 +11,13 @@ import POR from './POR/POR'
 const Home = () => {
   return (
     <div className={classes.wholePage}>
-        <AboutMe />
-        <Education />
-        <Experience />
-        <Skills />
-        <Projects />
-        <POR/>
-        <Resume/>
+        <AboutMe id='About'/>
+        <Education id='Education'/>
+        <Experience id='Experience'/>
+        <Skills id='Skills'/>
+        <Projects id='Projects'/>
+        <POR id='POR'/>
+        <Resume id='Resume'/>
     </div>
   )
 }

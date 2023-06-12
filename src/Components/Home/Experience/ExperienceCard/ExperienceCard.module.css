@@ -1,9 +1,14 @@
+a{
+    text-decoration: none;
+    color: black;
+}
 .outerCard{
     width: 32rem;
     padding: 1rem;
     box-shadow: none !important;
     border-radius: 0rem !important;
     margin: 1rem 0rem;
+    border-radius: 0rem;
 }
 .card{
     display: flex;
@@ -42,4 +47,9 @@
 .techUsed{
     display: flex;
     flex-direction: row;
+}
+.expand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

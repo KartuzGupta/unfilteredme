@@ -1,0 +1,24 @@
+.section{
+    background-color: var(--education-back-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.heading{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 6vw;
+    line-height: 7vw;
+    grid-area: h;
+    display: flex;
+    flex-direction: column;
+}
+.heading span{
+    font-size: 1.5vw;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: c;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,39 @@
+.section{
+    background-color: var(--skills-back-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.heading{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 6vw;
+    line-height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255, .2);
+}
+.lineContainer{
+    padding: 1rem 0rem;
+}
+.evenLine{
+    height: .2rem;
+    width: 100%;
+    rotate: 3deg;
+    border: none;
+    background-color: var(--skills-back-color);
+}
+.oddLine{
+    height: .2rem;
+    width: 100%;
+    rotate: -3deg;
+    border: none;
+    background-color: var(--skills-back-color);
+}

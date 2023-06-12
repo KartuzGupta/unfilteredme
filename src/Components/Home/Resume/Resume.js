@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from './Resume.module.css'
 
-const Resume = () => {
+const Resume = (props) => {
   return (
-    <div>
-      
+    <div id={props.id}>
+      Resume
     </div>
   )
 }
