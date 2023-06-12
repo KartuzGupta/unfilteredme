@@ -22,3 +22,23 @@
     grid-area: c;
     font-family: 'Poppins', sans-serif;
 }
+
+@media only screen and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .heading{
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+    .heading div{
+        margin-right: 0.7rem;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .heading span{
+        font-size: 0.9rem;
+    }
+
+}

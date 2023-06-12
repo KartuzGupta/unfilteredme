@@ -51,7 +51,7 @@ const ExperienceCard = (props) => {
                 </div>
                 <div className={`${classes.matter} ${classes.expand}`}>
                   <p>{props.brief}</p>
-                  <CardActions>
+                  <CardActions className={classes.cardActions}>
                     <ExpandMore
                     expand={expanded}
                     onClick={handleExpandClick}

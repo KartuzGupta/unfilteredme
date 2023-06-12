@@ -46,7 +46,7 @@ const EducationCard = (props) => {
                     {props.year}
                 </div>
             </div>
-            <CardActions>
+            <CardActions className={classes.cardActions}>
                 <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}

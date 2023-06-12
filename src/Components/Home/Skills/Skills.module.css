@@ -37,3 +37,25 @@
     border: none;
     background-color: var(--skills-back-color);
 }
+
+@media only screen and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .heading{
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .cards{
+        width: 100vw;
+    }
+    .heading{
+        margin: 1rem;
+        font-size: 2rem;
+    }
+    .heading div{
+        font-size: 2rem;
+    }
+}

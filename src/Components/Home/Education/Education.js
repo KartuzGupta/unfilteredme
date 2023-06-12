@@ -35,7 +35,8 @@ const Education = (props) => {
   return (
     <div className={classes.section} id={props.id}>
       <div className={classes.heading}>
-        STUDY <br/> ABODE
+        <span>STUDY &nbsp;</span>
+        <span>ABODE</span>
       </div>
       <div className={classes.cards}>
         {

@@ -23,3 +23,15 @@
     width: 2.5rem;
     cursor: pointer;
 }
+@media only screen and (max-width: 600px){
+    .icons{
+        grid-template-columns: repeat(4, 2rem);
+        padding: 1rem;
+    }
+    .card{
+        flex-direction: column !important;
+    }
+    .heading{
+        padding: 1rem;
+    }
+}

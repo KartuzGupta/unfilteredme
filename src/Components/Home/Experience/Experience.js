@@ -33,7 +33,8 @@ const Experience = (props) => {
   return (
     <div className={classes.section} id={props.id}>
       <div className={classes.heading}>
-        GIG <br/> QUEST
+        <span>GIG &nbsp;</span>
+        <span>QUEST</span>
       </div>
       <div className={classes.cards}>
         {

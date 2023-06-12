@@ -41,3 +41,22 @@
 .details li{
     font-size: 0.8rem;
 }
+@media only screen and (max-width: 600px){
+    .outerCard, .card{
+        width: 90vw;
+        margin: 1rem 0rem;
+    }   
+    .heading{
+        font-size: 1rem;
+    }
+    .logo img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .cardActions{
+        padding: 0rem;
+    }
+    .outerCard{
+        padding: 0.5rem;
+    }
+}
