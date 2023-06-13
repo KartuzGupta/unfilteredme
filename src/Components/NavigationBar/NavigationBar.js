@@ -10,7 +10,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-// import classes from './NavigationBar.module.css';
+import FilterAltOffIcon from '@mui/icons-material/FilterAltOff';
+import classes from './NavigationBar.module.css';
 
 import { styled } from '@mui/system';
 
@@ -43,7 +44,7 @@ function NavigationBar() {
     <StyledAppBar position='fixed'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <FilterAltOffIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -59,10 +60,10 @@ function NavigationBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            UNFILTERED ME
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}} >
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'none' }}} >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -99,7 +100,7 @@ function NavigationBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <FilterAltOffIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -116,7 +117,7 @@ function NavigationBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            UNFILTERED ME
           </Typography>
           
           {/* Large Screen */}

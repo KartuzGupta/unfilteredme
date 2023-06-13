@@ -5,6 +5,9 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
 import {FaTwitter} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
+
+
 const AboutMe = (props) => {
   const socialMedia = [
     {
@@ -52,13 +55,13 @@ const AboutMe = (props) => {
           style={{ fontSize: '3vw', fontWeight:'500', display: 'block', fontFamily: 'Poppins, sans-serif', color:"whitesmoke" }}
           repeat={Infinity}
           className={classes.typing}
-      /></span>
+        /></span>
         <div className={classes.socialContainer}>
           
           {
             socialMedia.map((item, index) => { 
               return (
-                <Link to={item.link} className={classes.logo}>{item.logo}</Link>
+                <Link to={item.link} className={classes.logo} target='_blank'>{item.logo}</Link>
               )
             })
             }
@@ -66,7 +69,8 @@ const AboutMe = (props) => {
         </div>
       </div>
       <div className={classes.rightContainer}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum in, recusandae doloribus dolorem iusto ullam sint alias magni pariatur dolor ipsum, eum id incidunt facilis dignissimos ratione excepturi enim.
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reiciendis excepturi perspiciatis natus, numquam libero atque, earum nulla sapiente eaque magnam labore doloremque quam ipsa nesciunt maxime culpa inventore quaerat?</p>
+        <Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button>
       </div>
     </div>
   )
