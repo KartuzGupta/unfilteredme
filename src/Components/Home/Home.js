@@ -17,7 +17,7 @@ const Home = () => {
         <Skills id='Skills'/>
         <Projects id='Projects'/>
         <POR id='POR'/>
-        {/* <Resume id='Resume'/> */}
+        <Resume id='Resume'/>
     </div>
   )
 }
