@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useEffect , useState} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,9 +10,16 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+// Icons
 import FilterAltOffIcon from '@mui/icons-material/FilterAltOff';
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
+
+// CSS classes
 import classes from './NavigationBar.module.css';
 
+// Redux Component
+import { useDispatch, useSelector } from 'react-redux';
+import { handleFilter } from '../../Store/filterSlice';
 import { styled } from '@mui/system';
 
 const StyledAppBar = styled(AppBar)`
@@ -22,13 +30,28 @@ const StyledAppBar = styled(AppBar)`
 const pages = ['About', 'Education', 'Experience', 'Skills', 'Projects', 'POR'];
 
 function NavigationBar() {
+  const filter = useSelector((state) => state.filterSlice.filter);
+  const dispatch = useDispatch();
+  const [name, setName] = useState(filter ? 'FILTERED ME' : 'UNFILTERED ME') ; 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  useEffect(() => {
+    if (filter) {
+      setName('FILTERED ME');
+    }
+    else {
+      setName('UNFILTERED ME');
+    }
+  }, [filter])
+
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+  
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+  
   const handleClick = (page) => { 
     const element = document.getElementById(page);
     console.log(element)
@@ -39,11 +62,15 @@ function NavigationBar() {
     
     handleCloseNavMenu();
   }
+
+  const handleFilterClick = (filterValue) => {
+    dispatch(handleFilter(filterValue));
+  }
   return (
     <StyledAppBar position='fixed'>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
-          <FilterAltOffIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          {filter ? <button  onClick={() => handleFilterClick(false)} className={classes.filterButton}><FilterAltIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /></button> : <button onClick={()=> handleFilterClick(true)}  className={classes.filterButton} ><FilterAltOffIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /></button> }
           <Typography
             variant="h6"
             noWrap
@@ -59,10 +86,10 @@ function NavigationBar() {
               textDecoration: 'none',
             }}
           >
-            UNFILTERED ME
+            {name}
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'none' }}} >
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'none' } }} >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -99,7 +126,8 @@ function NavigationBar() {
               ))}
             </Menu>
           </Box>
-          <FilterAltOffIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {filter ? <button  onClick={() => handleFilterClick(false)} className={classes.filterButton}><FilterAltIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /></button> : <button onClick={()=> handleFilterClick(true)}  className={classes.filterButton} ><FilterAltOffIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /></button> }
+
           <Typography
             variant="h5"
             noWrap
@@ -116,7 +144,7 @@ function NavigationBar() {
               textDecoration: 'none',
             }}
           >
-            UNFILTERED ME
+            {name}
           </Typography>
           
           {/* Large Screen */}

@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import classes from './EducationCard.module.css'
 import { Link } from 'react-router-dom'
-
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const EducationCard = (props) => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
   return (
-    <div className={classes.card}>
+    <div className={classes.card} data-aos="fade-up" data-aos-once="true">
         <div className={classes.logo}>
             <Link to={props.link} target='_blank'> <img src={props.logo} alt="logo" /> </Link>
         </div>

@@ -9,6 +9,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import classes from './PORCard.module.css'
 import { Link } from 'react-router-dom'
 
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -27,9 +31,11 @@ const EducationCard = (props) => {
     const handleExpandClick = () => {
       setExpanded(!expanded);
     };
-  
+    useEffect(() => {
+        AOS.init();
+  })
     return (
-    <Card className={classes.outerCard}>
+    <Card className={classes.outerCard} data-aos="zoom-in-down" data-aos-once="true">
         <div className={classes.card}>
             <div className={classes.logo}>
                 <Link to={props.link} target='_blank'> <img src={props.logo} alt="logo" /> </Link>

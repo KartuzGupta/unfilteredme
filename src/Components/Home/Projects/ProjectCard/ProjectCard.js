@@ -7,8 +7,16 @@ import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import classes from './ProjectCard.module.css'
 import { Link } from 'react-router-dom';
+
+// Icons
 import { SiGithub, SiGoogledrive } from 'react-icons/si';
-import {BiLinkExternal} from 'react-icons/bi'
+import { BiLinkExternal } from 'react-icons/bi'
+
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -26,9 +34,11 @@ const ExperienceCard = (props) => {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
+  useEffect(() => {
+    AOS.init();
+  })
   return (
-      <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}}>
+      <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}} data-aos="fade-up" data-aos-once="true">
         <div className={classes.card}>
 
             <div className={classes.description}>
@@ -48,7 +58,7 @@ const ExperienceCard = (props) => {
                     <BiLinkExternal/>
                   </Link>
                 }
-                {props.gihtub !== null &&
+                {props.github !== null &&
                   <Link to={props.gihtub} target='_blank'>
                     <SiGithub/>
                   </Link>

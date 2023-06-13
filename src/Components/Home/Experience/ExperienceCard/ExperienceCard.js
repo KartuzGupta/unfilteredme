@@ -10,6 +10,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import classes from './ExperienceCard.module.css'
 import { Link } from 'react-router-dom';
 
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -28,8 +33,12 @@ const ExperienceCard = (props) => {
     setExpanded(!expanded);
   };
 
+  useEffect(() => {
+    AOS.init();
+  })
+
   return (
-      <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}}>
+      <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}} data-aos="zoom-in" data-aos-once="true">
         <div className={classes.card}>
             <Link to={props.link} target='_blank'> 
             <div className={classes.logo}>

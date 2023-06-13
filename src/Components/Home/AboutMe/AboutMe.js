@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import classes from './AboutMe.module.css';
 import { TypeAnimation } from 'react-type-animation';
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
@@ -6,8 +6,8 @@ import { SiGmail } from 'react-icons/si'
 import {FaTwitter} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
-
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const AboutMe = (props) => {
   const socialMedia = [
     {
@@ -32,8 +32,13 @@ const AboutMe = (props) => {
     }
 
   ]
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
+    
     <div className={classes.section} id={props.id}>
+
       <div className={classes.heading}>
         <span>Hey Guys, I'm</span>
         <span><TypeAnimation
@@ -68,7 +73,7 @@ const AboutMe = (props) => {
             
         </div>
       </div>
-      <div className={classes.rightContainer}>
+      <div className={classes.rightContainer} data-aos="fade-left">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reiciendis excepturi perspiciatis natus, numquam libero atque, earum nulla sapiente eaque magnam labore doloremque quam ipsa nesciunt maxime culpa inventore quaerat?</p>
         <Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button>
       </div>
