@@ -59,7 +59,7 @@ const ExperienceCard = (props) => {
                   </Link>
                 }
                 {props.github !== null &&
-                  <Link to={props.gihtub} target='_blank'>
+                  <Link to={props.github} target='_blank'>
                     <SiGithub/>
                   </Link>
                 }
@@ -71,7 +71,7 @@ const ExperienceCard = (props) => {
                 }
                 </div>
             </div>
-            <CardActions className={classes.cardActions}>
+            {props.description.length > 0 && <CardActions className={classes.cardActions}>
             <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}
@@ -81,7 +81,7 @@ const ExperienceCard = (props) => {
             >
                 <ExpandMoreIcon />
             </ExpandMore>
-            </CardActions>  
+            </CardActions>}  
         </div>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <ul className={classes.details}>

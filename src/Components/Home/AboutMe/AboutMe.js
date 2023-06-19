@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useSelector } from 'react-redux';
 const AboutMe = (props) => {
+  const filterValue = useSelector((state) => state.filterSlice.filter);
   const socialMedia = [
     {
       "name": 'LinkedIn',
@@ -32,19 +34,19 @@ const AboutMe = (props) => {
     }
 
   ]
+  const resumeLink = 'https://drive.google.com/file/d/1YFR1LKAHRdgYzY09YZNuLHmh7m90O8Qy/view?usp=sharing';
   useEffect(() => {
     AOS.init();
   }, [])
   return (
     
     <div className={classes.section} id={props.id}>
-
       <div className={classes.heading}>
-        <span>Hey Guys, I'm</span>
-        <span><TypeAnimation
+        <span >Hey Guys, I'm</span>
+          <span><TypeAnimation
           sequence={[
             // Same substring at the start will only be typed out once, initially
-            'Kartikay Gupta',
+            `Kartikay Gupta`,
             1000, // wait 1s before replacing "Mice" with "Hamsters"
             'Mechanical Engineer',
             1000,
@@ -72,10 +74,11 @@ const AboutMe = (props) => {
             }
             
         </div>
-      </div>
+        </div>
+
       <div className={classes.rightContainer} data-aos="fade-left">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reiciendis excepturi perspiciatis natus, numquam libero atque, earum nulla sapiente eaque magnam labore doloremque quam ipsa nesciunt maxime culpa inventore quaerat?</p>
-        <Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button>
+        <Link to={resumeLink} target='_blank'><Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button></Link>
       </div>
     </div>
   )

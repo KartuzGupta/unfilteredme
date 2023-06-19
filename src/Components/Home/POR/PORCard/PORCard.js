@@ -51,7 +51,7 @@ const EducationCard = (props) => {
                     {props.year}
                 </div>
             </div>
-            <CardActions className={classes.cardActions}>
+            {props.description.length > 0 && <CardActions className={classes.cardActions}>
                 <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}
@@ -60,14 +60,14 @@ const EducationCard = (props) => {
                 >
                 <ExpandMoreIcon />
                 </ExpandMore>
-            </CardActions>
+            </CardActions>}
         </div>
 
         <Collapse in={expanded} timeout="auto" unmountOnExit>
             <ul className={classes.details}>
                 {
                     props.description.map((item, key) => {
-                        return(<li key={key}>{item}</li>)
+                        return (<li key={key}><div dangerouslySetInnerHTML={{ __html: item }} /></li>)
                     })
                 }
             </ul>   
