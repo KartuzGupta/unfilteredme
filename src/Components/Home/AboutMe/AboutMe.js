@@ -8,9 +8,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useSelector } from 'react-redux';
 const AboutMe = (props) => {
-  const filterValue = useSelector((state) => state.filterSlice.filter);
   const socialMedia = [
     {
       "name": 'LinkedIn',
