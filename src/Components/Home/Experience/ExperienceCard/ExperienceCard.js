@@ -75,13 +75,13 @@ const ExperienceCard = (props) => {
             </div>
         </div>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent>
+          <ul className={classes.details}>
                 {
                     props.description.map((item, key) => {
-                        return(<p className={classes.details} key={key}>{item}</p>)
+                        return(<li className={classes.details} key={key}><div dangerouslySetInnerHTML={{__html: item}} /></li>)
                     })
-                }
-            </CardContent>
+            }
+            </ul>
         </Collapse>
     </Card>
   );

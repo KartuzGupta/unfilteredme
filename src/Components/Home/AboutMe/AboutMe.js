@@ -77,7 +77,7 @@ const AboutMe = (props) => {
         </div>
 
       <div className={classes.rightContainer} data-aos="fade-left">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reiciendis excepturi perspiciatis natus, numquam libero atque, earum nulla sapiente eaque magnam labore doloremque quam ipsa nesciunt maxime culpa inventore quaerat?</p>
+        <p>I am Kartikay, a passionate web developer pursuing my BTech degree at IITP. With experience in internships, projects, and active involvement in college clubs, I have developed strong programming and design skills. I actively participate in competitive programming to enhance my abilities. I am now seeking innovative opportunities to apply my expertise and contribute to impactful web development projects.</p>
         <Link to={resumeLink} target='_blank'><Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button></Link>
       </div>
     </div>

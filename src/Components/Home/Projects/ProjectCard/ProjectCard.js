@@ -50,7 +50,7 @@ const ExperienceCard = (props) => {
                     })}
                 </div>
                 <div className={`${classes.matter} ${classes.expand}`}>
-                  <p>{props.brief}</p>
+                  <p><div dangerouslySetInnerHTML={{__html: props.brief}}/></p>
           </div>
           <div className={classes.resources}>
                 {props.website !== null &&
@@ -87,7 +87,7 @@ const ExperienceCard = (props) => {
         <ul className={classes.details}>
           {
               props.description.map((item, key) => {
-                  return(<li key={key}>{item}</li>)
+                  return(<li key={key}>< div dangerouslySetInnerHTML={{__html: item}} /></li>)
               })
           }
         </ul>   

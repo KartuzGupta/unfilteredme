@@ -5,15 +5,15 @@ import SrijconLogo from '../../../Assets/Logos/SrijconLogo.svg'
 import BarberaLogo from '../../../Assets/Logos/BarberaLogo.png'
 const data = [
   {
-      "logo": SrijconLogo,
-      "link": 'https://www.srijcon.com/',
-      "org":"Srijcon",
-      "role":"ReactJS Developer Intern",
-      "duration": "(Mar 2023- Jul 2023)",
-      "tech": ['ReactJS', 'CSS', 'Redux', 'UI', 'UX', 'Figma'],
-      "description": [],
+    "logo": SrijconLogo,
+    "link": 'https://www.srijcon.com/',
+    "org":"Srijcon",
+    "role":"ReactJS Developer Intern",
+    "duration": "(Mar 2023- Jul 2023)",
+    "tech": ['ReactJS', 'CSS', 'Redux', 'UI', 'UX', 'Figma'],
+    "description": ['Added a feature that allows users to crop and edit their images before uploading it to the site which has been merged with the code in production', 'Improved the existing facility for uploading content by adding a functionality that allows users to upload and edit multiple media files at once in more convenient and time efficient manner', 'Improved UI/UX of pages and designed a better landing page on figma', 'Participated in daily meetings with the team to discuss goals and upadate them on my progress'],
     "color": 'red',
-      "brief":"Improved the UI/UX and added several features to the website",
+    "brief":"Srijcon is a platform where creators can showcase their creations and ideas",
   },
   {
     "logo": BarberaLogo,
@@ -22,9 +22,9 @@ const data = [
     "role":"Frontend Developer Intern",
     "duration": "(Oct 2021- Nov 2021)",
     "tech": ['HTML', 'JavaScript', 'CSS', 'UI', 'UX'],
-    "description": [],
+    "description": ['Worked with a team and created several pages for the website from scratch', 'Engaged in discussions regarding our daily targets and presented updates on my progress'],
     "color": 'black',
-    "brief":"Created several pages from scratch for an online salon services website",
+    "brief":"A startup by IITians to provide quality home salon services through online booking",
   },
   
 ]
