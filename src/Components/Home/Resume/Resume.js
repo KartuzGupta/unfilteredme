@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './Resume.module.css'
+// import classes from './Resume.module.css'
 
 import '@react-pdf-viewer/core/lib/styles/index.css';
 const Resume = (props) => {
