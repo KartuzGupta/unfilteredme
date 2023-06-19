@@ -46,8 +46,6 @@
         flex-direction: row;
         margin-top: 1rem;
     }
-}
-@media only screen and (max-width: 800px) {
     .cards{
         width: 100vw;
     }

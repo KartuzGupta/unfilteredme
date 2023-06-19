@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import classes from './Skills.module.css'
 import SkillCard from './SkillCard/SkillCard'
 
@@ -183,8 +183,19 @@ const data = [
 ]
 
 const Skills = (props) => {
+  const [size, setSize] = useState();
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize(window.innerWidth);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+
   return (
     <div className={classes.section} id={props.id}>
+      <div style={{display:'flex', justifyContent:'center'}}>
       <div className={classes.heading}>
         <span>T</span>
         <span>A</span>
@@ -193,6 +204,16 @@ const Skills = (props) => {
         <span>N</span>
         <span>T</span>
       </div>
+      {size <= 800 && 
+        <div className={classes.heading}>
+        <span>S</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+      </div>
+        }
+        </div>
       <div className={classes.cards}>
         {
           data.map((item, key) => {
@@ -205,13 +226,13 @@ const Skills = (props) => {
           })
         }
       </div>
-      <div className={classes.heading}>
+      {size > 800 && <div className={classes.heading}>
         <span>S</span>
         <span>T</span>
         <span>A</span>
         <span>C</span>
         <span>K</span>
-      </div>
+      </div>}
     </div>
   )
 }
