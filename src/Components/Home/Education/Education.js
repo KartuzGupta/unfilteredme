@@ -3,6 +3,7 @@ import classes from './Education.module.css'
 import EducationCard from './EducationCard/EducationCard'
 import IITPLogo from '../../../Assets/Logos/IITPLogo.png'
 import VSECLogo from '../../../Assets/Logos/VSECLogo.png'
+
 const data = [
   {
     "logo": IITPLogo,
@@ -34,8 +35,10 @@ const data = [
 const Education = (props) => {
   return (
     <div className={classes.section} id={props.id}>
+      
       <div className={classes.heading}>
-        STUDY <br/> ABODE
+        <span>STUDY &nbsp;</span>
+        <span>ABODE</span>
       </div>
       <div className={classes.cards}>
         {

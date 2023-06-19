@@ -7,10 +7,15 @@ import Skills from './Skills/Skills'
 import Projects from './Projects/Projects'
 import Resume from './Resume/Resume'
 import POR from './POR/POR'
-
+import {Helmet} from "react-helmet";
+import { useSelector } from 'react-redux'
 const Home = () => {
+  const filter = useSelector((state) => state.filterSlice.filter);
   return (
     <div className={classes.wholePage}>
+        <Helmet>
+          <title>{filter ? 'FILTERED ME': 'UNFILTERED ME'}</title>
+        </Helmet>
         <AboutMe id='About'/>
         <Education id='Education'/>
         <Experience id='Experience'/>

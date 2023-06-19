@@ -7,8 +7,16 @@ import IconButton from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import classes from './ProjectCard.module.css'
 import { Link } from 'react-router-dom';
+
+// Icons
 import { SiGithub, SiGoogledrive } from 'react-icons/si';
-import {BiLinkExternal} from 'react-icons/bi'
+import { BiLinkExternal } from 'react-icons/bi'
+
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -26,9 +34,11 @@ const ExperienceCard = (props) => {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
+  useEffect(() => {
+    AOS.init();
+  })
   return (
-      <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}}>
+      <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}} data-aos="fade-up" data-aos-once="true">
         <div className={classes.card}>
 
             <div className={classes.description}>
@@ -40,7 +50,7 @@ const ExperienceCard = (props) => {
                     })}
                 </div>
                 <div className={`${classes.matter} ${classes.expand}`}>
-                  <p>{props.brief}</p>
+                  <p><div dangerouslySetInnerHTML={{__html: props.brief}}/></p>
           </div>
           <div className={classes.resources}>
                 {props.website !== null &&
@@ -48,8 +58,8 @@ const ExperienceCard = (props) => {
                     <BiLinkExternal/>
                   </Link>
                 }
-                {props.gihtub !== null &&
-                  <Link to={props.gihtub} target='_blank'>
+                {props.github !== null &&
+                  <Link to={props.github} target='_blank'>
                     <SiGithub/>
                   </Link>
                 }
@@ -61,7 +71,7 @@ const ExperienceCard = (props) => {
                 }
                 </div>
             </div>
-            <CardActions className={classes.cardActions}>
+            {props.description.length > 0 && <CardActions className={classes.cardActions}>
             <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}
@@ -71,13 +81,13 @@ const ExperienceCard = (props) => {
             >
                 <ExpandMoreIcon />
             </ExpandMore>
-            </CardActions>  
+            </CardActions>}  
         </div>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <ul className={classes.details}>
           {
               props.description.map((item, key) => {
-                  return(<li key={key}>{item}</li>)
+                  return(<li key={key}>< div dangerouslySetInnerHTML={{__html: item}} /></li>)
               })
           }
         </ul>   

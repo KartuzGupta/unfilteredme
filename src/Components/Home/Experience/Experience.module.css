@@ -9,10 +9,28 @@
     font-size: 6vw;
     line-height: 7vw;
     display: flex;
+    flex-direction: column;
 }
 .cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .heading{
+        flex-direction: row;
+        margin-top: 1rem;
+        font-size: 2rem;
+
+    }
+    .cards{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

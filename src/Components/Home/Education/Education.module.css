@@ -10,6 +10,7 @@
     line-height: 7vw;
     grid-area: h;
     display: flex;
+    flex-direction: column;
 }
 .cards{
     display: flex;
@@ -18,3 +19,15 @@
     grid-area: c;
     font-family: 'Poppins', sans-serif;
 }
+
+@media only screen and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .heading{
+        flex-direction: row;
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+}
+

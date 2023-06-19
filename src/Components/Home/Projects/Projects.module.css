@@ -10,7 +10,7 @@
     font-size: 6vw;
     line-height: 7vw;
     display: flex;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
 }
 .cards{
     display: flex;
@@ -18,4 +18,10 @@
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+    .heading{
+        font-size: 2rem;
+    }
 }

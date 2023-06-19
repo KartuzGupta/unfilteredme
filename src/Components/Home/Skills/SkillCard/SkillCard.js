@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import Tooltip from '@mui/material/Tooltip';
 
 const SkillCard = (props) => {
+  
   return (
-    <div className={classes.card} style={{flexDirection: props.id%2===0 ? 'row':'row-reverse'}}>
+    <div className={classes.card} style={{flexDirection: props.id%2===0 ? 'row':'row-reverse'}} data-aos={props.id%2===0 ? "fade-right":"fade-left"} data-aos-once="true">
         <div className={classes.heading}>
           {props.heading}
         </div>

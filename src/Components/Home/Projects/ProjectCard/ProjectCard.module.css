@@ -67,3 +67,23 @@ a{
 .details li{
     font-size: 0.8rem;
 }
+@media only screen and (max-width: 800px){
+    .outerCard, .card{
+        width: 90vw;
+    }
+    .description{
+        width: 100%;
+    }
+    .outerCard{
+        padding: 0.5rem;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    .matter{
+        font-size: 0.8rem;
+    }
+    .techUsed{
+        font-size: 0.6rem;
+    }
+}

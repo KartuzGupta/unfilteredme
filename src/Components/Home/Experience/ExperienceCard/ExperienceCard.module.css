@@ -53,3 +53,34 @@ a{
     flex-direction: row;
     justify-content: space-between;
 }
+.details{
+    padding: 0rem 1rem;
+}
+.details li{
+    font-size: 0.8rem;
+}
+@media only screen and (max-width: 600px){
+    
+    .outerCard{
+        width: 90vw;
+    }   
+    .card{
+        width: 90vw;
+    }
+    .logo img{
+        width: 4rem;
+        height: 4rem;
+        padding-left: 0rem;
+    }
+    .matter{
+        width: 70vw;
+        font-size: 0.8rem;
+    }
+    .cardActions{
+        padding: 0rem;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    
+}

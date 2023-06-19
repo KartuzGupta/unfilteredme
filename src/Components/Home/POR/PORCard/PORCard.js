@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
@@ -10,6 +9,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import classes from './PORCard.module.css'
 import { Link } from 'react-router-dom'
 
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -28,9 +31,11 @@ const EducationCard = (props) => {
     const handleExpandClick = () => {
       setExpanded(!expanded);
     };
-  
+    useEffect(() => {
+        AOS.init();
+  })
     return (
-    <Card className={classes.outerCard}>
+    <Card className={classes.outerCard} data-aos="zoom-in-down" data-aos-once="true">
         <div className={classes.card}>
             <div className={classes.logo}>
                 <Link to={props.link} target='_blank'> <img src={props.logo} alt="logo" /> </Link>
@@ -46,7 +51,7 @@ const EducationCard = (props) => {
                     {props.year}
                 </div>
             </div>
-            <CardActions>
+            {props.description.length > 0 && <CardActions className={classes.cardActions}>
                 <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}
@@ -55,14 +60,14 @@ const EducationCard = (props) => {
                 >
                 <ExpandMoreIcon />
                 </ExpandMore>
-            </CardActions>
+            </CardActions>}
         </div>
 
         <Collapse in={expanded} timeout="auto" unmountOnExit>
             <ul className={classes.details}>
                 {
                     props.description.map((item, key) => {
-                        return(<li key={key}>{item}</li>)
+                        return (<li key={key}><div dangerouslySetInnerHTML={{ __html: item }} /></li>)
                     })
                 }
             </ul>   
