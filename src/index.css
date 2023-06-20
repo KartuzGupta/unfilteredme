@@ -11,4 +11,5 @@ body{
   font-size: 10px;
   margin: 0px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

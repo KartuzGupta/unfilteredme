@@ -5,7 +5,6 @@ import Education from './Education/Education'
 import Experience from './Experience/Experience'
 import Skills from './Skills/Skills'
 import Projects from './Projects/Projects'
-import Resume from './Resume/Resume'
 import POR from './POR/POR'
 import {Helmet} from "react-helmet";
 import { useSelector } from 'react-redux'
@@ -22,7 +21,6 @@ const Home = () => {
         <Skills id='Skills'/>
         <Projects id='Projects'/>
         <POR id='POR'/>
-        <Resume id='Resume'/>
     </div>
   )
 }

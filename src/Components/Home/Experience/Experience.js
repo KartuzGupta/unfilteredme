@@ -20,7 +20,7 @@ const data = [
     "org": "Barbera",
     "link": 'https://barbera.netlify.app/',
     "role":"Frontend Developer Intern",
-    "duration": "(Oct 2021- Nov 2021)",
+    "duration": "(Jul 2021- Oct 2021)",
     "tech": ['HTML', 'JavaScript', 'CSS', 'UI', 'UX'],
     "description": ['Worked with a team and created several pages for the website from scratch', 'Engaged in discussions regarding our daily targets and presented updates on my progress'],
     "color": 'black',

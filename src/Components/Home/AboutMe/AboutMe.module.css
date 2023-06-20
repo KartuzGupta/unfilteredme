@@ -53,7 +53,9 @@
         align-items: center;
         width: 100%;
         font-size: 2rem;
+        margin-top: 1rem;
     }
+
     .rightContainer{
         width: 100%;
         text-align: justify;
@@ -62,9 +64,11 @@
         padding: 1rem 0rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .typing{
         font-size: 1.5rem !important;
+        line-height: 3rem !important;
     }
     .logo{
         font-size: 1.5rem;
