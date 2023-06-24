@@ -69,7 +69,7 @@ const AboutMe = (props) => {
                 <Link to={item.link} className={classes.logo} target='_blank'>{item.logo}</Link>
               )
             })
-            }
+          }
             
         </div>
         </div>
