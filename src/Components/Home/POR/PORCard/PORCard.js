@@ -32,10 +32,10 @@ const EducationCard = (props) => {
       setExpanded(!expanded);
     };
     useEffect(() => {
-        AOS.init();
+        AOS.init({delay: 100,});
   })
     return (
-    <Card className={classes.outerCard} data-aos="zoom-in-down" data-aos-once="true">
+    <Card className={classes.outerCard} data-aos="zoom-in">
         <div className={classes.card}>
             <div className={classes.logo}>
                 <Link to={props.link} target='_blank'> <img src={props.logo} alt="logo" /> </Link>

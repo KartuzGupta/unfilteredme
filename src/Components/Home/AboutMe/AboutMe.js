@@ -34,7 +34,7 @@ const AboutMe = (props) => {
   ]
   const resumeLink = 'https://drive.google.com/file/d/1YFR1LKAHRdgYzY09YZNuLHmh7m90O8Qy/view?usp=sharing';
   useEffect(() => {
-    AOS.init();
+    AOS.init({delay: 100,});
   }, [])
   return (
     
