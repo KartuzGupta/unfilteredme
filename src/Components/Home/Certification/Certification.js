@@ -36,7 +36,7 @@ const Certification = (props) => {
             <div className={classes.heading}>
                 Courses & Certifications
             </div>
-            <div className={classes.container} data-aos="zoom-out">
+            <div className={classes.container}>
             {
                 data.map((data, key) => {
                     return (
