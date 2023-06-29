@@ -11,7 +11,7 @@ const data = [
     "role":"ReactJS Developer Intern",
     "duration": "(Mar 2023- Jul 2023)",
     "tech": ['ReactJS', 'CSS', 'Redux', 'UI', 'UX', 'Figma'],
-    "description": ['Added a feature that allows users to crop and edit their images before uploading it to the site which has been merged with the code in production', 'Improved the existing facility for uploading content by adding a functionality that allows users to upload and edit multiple media files at once in more convenient and time efficient manner', 'Improved UI/UX of pages and designed a better landing page on figma', 'Participated in daily meetings with the team to discuss goals and upadate them on my progress'],
+    "description": ['Added a feature that allows users to <strong>edit their profile photos</strong> before uploading them to the platform', 'Revamped the existing feature for uploading projects which allowed only a single image. <strong>Created a streamlined workflow that allows users to upload and edit multiple images and videos with convenience. Added a rich text editor which shall help users to style their description. Also allowed the users to attach additional files related to the project</strong>', 'Improved <strong>UI/UX of pages and designed a better landing page on Figma</strong>. Maintained clean and readable code along with proper documentation about it', 'Actively participated in daily meetings with the team to discuss improvements and further goals'],
     "color": 'red',
     "brief":"Srijcon is a platform where creators can showcase their creations and ideas",
   },

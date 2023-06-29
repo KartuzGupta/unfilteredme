@@ -8,6 +8,7 @@ import Projects from './Projects/Projects'
 import POR from './POR/POR'
 import {Helmet} from "react-helmet";
 import { useSelector } from 'react-redux'
+import Certification from './Certification/Certification'
 const Home = () => {
   const filter = useSelector((state) => state.filterSlice.filter);
   return (
@@ -16,9 +17,10 @@ const Home = () => {
           <title>{filter ? 'FILTERED ME': 'UNFILTERED ME'}</title>
         </Helmet>
         <AboutMe id='About'/>
-        <Education id='Education'/>
+        <Education id='Education' />
         <Experience id='Experience'/>
-        <Skills id='Skills'/>
+        <Skills id='Skills' />
+        <Certification id='Certification' />
         <Projects id='Projects'/>
         <POR id='POR'/>
     </div>
