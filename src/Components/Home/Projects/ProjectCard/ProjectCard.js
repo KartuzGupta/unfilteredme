@@ -35,7 +35,10 @@ const ExperienceCard = (props) => {
     setExpanded(!expanded);
   };
   useEffect(() => {
-    AOS.init({delay: 100,});
+    AOS.init({
+      delay: 100,
+      once: true,
+    });
   })
   return (
       <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}} data-aos="fade-up" >
