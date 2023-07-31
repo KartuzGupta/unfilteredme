@@ -10,3 +10,22 @@
     display: flex;
     overflow-x: auto;
 }
+.container::-webkit-scrollbar {
+    cursor: pointer;
+    height: 5px;
+}
+  
+  /* Track */
+.container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+.container::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+.container::-webkit-scrollbar-thumb:hover {
+background: #555;
+}

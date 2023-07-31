@@ -33,11 +33,14 @@ const ExperienceCard = (props) => {
   };
 
   useEffect(() => {
-    AOS.init({delay: 100,});
+    AOS.init({
+      delay: 100,
+      once: true,
+    });
   })
 
   return (
-      <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}} data-aos="zoom-in" >
+      <Card className={classes.outerCard} style={{borderLeft:`0.25rem solid ${props.color}`}} data-aos="zoom-in">
         <div className={classes.card}>
             <Link to={props.link} target='_blank'> 
             <div className={classes.logo}>

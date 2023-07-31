@@ -10,7 +10,7 @@ const data = [
     "link" :"https://www.iitp.ac.in/",
       "school":"Indian Institute of Technology Patna",
       "degree":"B.Tech. Mechanical Engineering",
-      "result": "8.37 (upto 6th semester)",
+      "result": "8.34 (upto 6th semester)",
       "year":"2024"
   },
   {

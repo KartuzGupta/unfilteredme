@@ -7,6 +7,8 @@ import classes from './Certification.module.css';
 import excelBeginners from '../../../Assets/Certificates/excelBeginner.jpg'
 import sqlBasics from '../../../Assets/Certificates/sqlBasics.jpg'
 import digitalMarketing from '../../../Assets/Certificates/googleDigitalMarketing.webp'
+import dataAnalytics from '../../../Assets/Certificates/DataAnalytics.jpg';
+
 // importing aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -29,7 +31,10 @@ const Certification = (props) => {
             "img": digitalMarketing,
             "link": "https://drive.google.com/file/d/11U0bgxqEKTE1dMbVjr9mdPKVKTaY3NpH/view?usp=drivesdk"
         },
-        
+        {
+            "img": dataAnalytics,
+            "link": "https://olympus1.mygreatlearning.com/course_certificate/EABYUNGS",
+        }
     ]
     return (
         <div id={props.id} className={classes.section}>
