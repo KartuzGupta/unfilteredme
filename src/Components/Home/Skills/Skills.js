@@ -5,11 +5,13 @@ import SkillCard from './SkillCard/SkillCard'
 // import icons
 import { TbBrandCpp } from 'react-icons/tb'
 // import { FaJava } from 'react-icons/fa'
-import { SiCodechef , SiJavascript, SiMysql, SiPhp, SiCodeforces, SiLeetcode, SiExpress, SiBootstrap, SiMui, SiSocketdotio, SiOpencv, SiGooglecolab, SiPython, SiJupyter, SiAnsys, SiMicrosoftexcel, SiVisualstudiocode, SiGithub, SiFigma} from 'react-icons/si'
+import { SiCodechef , SiJavascript, SiMysql, SiPhp, SiCodeforces, SiLeetcode, SiExpress, SiBootstrap, SiMui, SiSocketdotio, SiOpencv, SiGooglecolab, SiPython, SiJupyter, SiAnsys, SiMicrosoftexcel, SiGithub, SiFigma} from 'react-icons/si'
 import { AiFillHtml5 } from 'react-icons/ai'
 import {MdCss} from 'react-icons/md'
 import { RiReactjsFill } from 'react-icons/ri'
 import { FaNodeJs } from 'react-icons/fa'
+import { SiPowerbi } from 'react-icons/si'
+// import {SiVisualstudiocode} from 'react-icons/si'
 
 const data = [
   {
@@ -157,20 +159,26 @@ const data = [
     "skill": 'OTHERS',
     "icons": [
       
+      // {
+      //   "name":"VS Code",
+      //   "link": "",
+      //   "logo": <SiVisualstudiocode/>,
+      // },
       {
-        "name":"VS Code",
+        "name":"Power Bi",
         "link": "",
-        "logo": <SiVisualstudiocode/>,
+        "logo": <SiPowerbi/>,
+      },
+      
+      {
+        "name":"MS-Excel",
+        "link": "",
+        "logo": <SiMicrosoftexcel/>,
       },
       {
         "name":"Github",
         "link": "https://github.com/KartuzGupta",
         "logo": <SiGithub/>,
-      },
-      {
-        "name":"MS-Excel",
-        "link": "",
-        "logo": <SiMicrosoftexcel/>,
       },
       {
         "name":"Figma",
