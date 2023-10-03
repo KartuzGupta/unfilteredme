@@ -50,7 +50,7 @@ const AboutMe = (props) => {
             1000,
             'Web Developer',
             1000,
-            'Competitve Programmer',
+            'Supply Chain Enthusiast',
             1000,
             'Lazy',
             1000
@@ -75,7 +75,8 @@ const AboutMe = (props) => {
         </div>
 
       <div className={classes.rightContainer} data-aos="fade-left">
-        <p>I am Kartikay, a passionate web developer pursuing my BTech degree at IITP. With experience in internships, projects, and active involvement in college clubs, I have developed strong programming and design skills. I actively participate in competitive programming to enhance my abilities. I am now seeking innovative opportunities to apply my expertise and contribute to impactful web development projects.</p>
+        <p>I'm Kartikay Gupta, a graduate from IIT Patna in B.Tech Mechanical Engineering. Hailing from Kanpur, I have completed high school and intermediate here and have a strong passion for business and management. Along with my studies, I've interned as Operations Analyst at Ganesha Ecosphere, Web Developer at Srijcon Innovations and Business Development at Barbera. Furthermore, I actively contributed to fests and clubs at IITP like Infinito, NJACK and Placement Cell. Additionally, I also won a medal in the Inter IIT Tech Meet. Now pursuing a MBA at IIM Mumbai, I'm eager to know more about the business world.</p>
+        {/* <p>I am Kartikay, a passionate web developer pursuing my BTech degree at IITP. With experience in internships, projects, and active involvement in college clubs, I have developed strong programming and design skills. I actively participate in competitive programming to enhance my abilities. I am now seeking innovative opportunities to apply my expertise and contribute to impactful web development projects.</p> */}
         <Link to={resumeLink} target='_blank'><Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button></Link>
       </div>
     </div>

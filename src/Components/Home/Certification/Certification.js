@@ -8,7 +8,8 @@ import excelBeginners from '../../../Assets/Certificates/excelBeginner.jpg'
 import sqlBasics from '../../../Assets/Certificates/sqlBasics.jpg'
 import digitalMarketing from '../../../Assets/Certificates/googleDigitalMarketing.webp'
 import dataAnalytics from '../../../Assets/Certificates/DataAnalytics.jpg';
-
+import SixSigma from '../../../Assets/Certificates/SixSigma.png';
+import PowerBi from '../../../Assets/Certificates/PowerBi.png';
 // importing aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,6 +20,14 @@ const Certification = (props) => {
         });
     }, [])
     const data = [
+        {
+            "img": SixSigma,
+            "link": "https://coursera.org/verify/BVZLWHVZ7XEW",
+        },
+        {
+            "img": PowerBi,
+            "link": "https://coursera.org/verify/B2KRMFE2YZ3",
+        },
         {
             "img": excelBeginners,
             "link": "https://olympus1.mygreatlearning.com/course_certificate/BRFZDRBR",

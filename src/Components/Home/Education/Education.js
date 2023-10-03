@@ -3,8 +3,16 @@ import classes from './Education.module.css'
 import EducationCard from './EducationCard/EducationCard'
 import IITPLogo from '../../../Assets/Logos/IITPLogo.png'
 import VSECLogo from '../../../Assets/Logos/VSECLogo.png'
-
+import IIMLogo from '../../../Assets/Logos/IIMMumbaiLogo.png'
 const data = [
+  {
+    "logo": IIMLogo,
+    "link" :"https://www.iimmumbai.ac.in/",
+      "school":"Indian Institute of Management Mumbai",
+      "degree":"Master of Business Administration",
+      "result": "",
+      "year":"2025"
+  },
   {
     "logo": IITPLogo,
     "link" :"https://www.iitp.ac.in/",
