@@ -4,7 +4,20 @@ import ExperienceCard from './ExperienceCard/ExperienceCard'
 import SrijconLogo from '../../../Assets/Logos/SrijconLogo.svg'
 import BarberaLogo from '../../../Assets/Logos/BarberaLogo.png'
 import GESLLogo from '../../../Assets/Logos/GESLLogo.jpg'
+import OpusLogo from '../../../Assets/Logos/BirlaOpusLogo.jpeg'
+
 const data = [
+  {
+    "logo": OpusLogo,
+    "link": 'https://www.birlaopus.com/',
+    "org":"Birla Opus",
+    "role":"Supply Chain Intern",
+    "duration": "(Apr 2024- May 2024)",
+    "tech": ['Inventory', 'Automation'],
+    "description": [],
+    "color": 'purple',
+    "brief": "A new venture of Aditya Birla Group aiming to disrupt the paints industry, operating under their flagship company Grasim Industries.",
+  },
   {
     "logo": GESLLogo,
     "link": 'https://ganeshaecosphere.com/',

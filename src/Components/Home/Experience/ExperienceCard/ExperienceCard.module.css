@@ -47,6 +47,7 @@ a{
 .techUsed{
     display: flex;
     flex-direction: row;
+    overflow-wrap : break-word;
 }
 .expand{
     display: flex;
