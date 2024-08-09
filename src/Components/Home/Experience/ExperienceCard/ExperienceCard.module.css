@@ -71,7 +71,7 @@ a{
     .logo img{
         width: 4rem;
         height: 4rem;
-        padding-left: 0rem;
+        /* padding-left: 0rem; */
     }
     .matter{
         width: 70vw;

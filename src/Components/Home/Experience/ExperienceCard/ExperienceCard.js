@@ -46,7 +46,7 @@ const ExperienceCard = (props) => {
             <div className={classes.logo}>
               <img src={props.logo} alt="logo" />
               <div className={classes.heading}>{props.org}</div>
-          </div>
+            </div>
           </Link>
             <div className={classes.description}>
                 <div className={classes.heading}>

@@ -5,7 +5,7 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
 import {FaTwitter} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const AboutMe = (props) => {
@@ -32,7 +32,7 @@ const AboutMe = (props) => {
     }
 
   ]
-  const resumeLink = 'https://drive.google.com/file/d/1FotL6UK5xcUh_VLDC0_HOTtY1tJgGYDO/view?usp=sharing';
+  // const resumeLink = 'https://drive.google.com/file/d/1FotL6UK5xcUh_VLDC0_HOTtY1tJgGYDO/view?usp=sharing';
   useEffect(() => {
     AOS.init({delay: 100,});
   }, [])
@@ -77,7 +77,7 @@ const AboutMe = (props) => {
       <div className={classes.rightContainer} data-aos="fade-left">
         <p>Hello ! I'm Kartikay Gupta. I am currently pursuing MBA (OSCM) from IIM Mumbai and completed my B.Tech in Mechanical Engineering from IIT Patna. Hailing from Kanpur, I have completed high school and intermediate here and have a strong passion for business and management. I have completed multiple internships, giving me an opportunity to explore and contribute to real world problems.</p>
         {/* <p>I am Kartikay, a passionate web developer pursuing my BTech degree at IITP. With experience in internships, projects, and active involvement in college clubs, I have developed strong programming and design skills. I actively participate in competitive programming to enhance my abilities. I am now seeking innovative opportunities to apply my expertise and contribute to impactful web development projects.</p> */}
-        <Link to={resumeLink} target='_blank'><Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button></Link>
+        {/* <Link to={resumeLink} target='_blank'><Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button></Link> */}
       </div>
     </div>
   )

@@ -10,7 +10,7 @@ const data = [
     "link" :"https://www.iimmumbai.ac.in/",
       "school":"Indian Institute of Management Mumbai",
       "degree":"MBA (OSCM)",
-      "result": "8.79 (upto 3rd Module)",
+      "result": "8.90 (upto 3rd Module)",
       "year":"2025"
   },
   {
