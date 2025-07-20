@@ -9,8 +9,8 @@ const data = [
     "logo": IIMLogo,
     "link" :"https://www.iimmumbai.ac.in/",
       "school":"Indian Institute of Management Mumbai",
-      "degree":"MBA (OSCM)",
-      "result": "8.90 (upto 3rd Module)",
+      "degree":"MBA-OSCM",
+      "result": "8.71",
       "year":"2025"
   },
   {
@@ -18,7 +18,7 @@ const data = [
     "link" :"https://www.iitp.ac.in/",
       "school":"Indian Institute of Technology Patna",
       "degree":"B.Tech. Mechanical Engineering",
-      "result": "8.39 (upto 7th semester)",
+      "result": "8.39",
       "year":"2024"
   },
   {

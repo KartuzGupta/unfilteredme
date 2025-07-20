@@ -75,7 +75,7 @@ const AboutMe = (props) => {
         </div>
 
       <div className={classes.rightContainer} data-aos="fade-left">
-        <p>Hello ! I'm Kartikay Gupta. I am currently pursuing MBA (OSCM) from IIM Mumbai and completed my B.Tech in Mechanical Engineering from IIT Patna. Hailing from Kanpur, I have completed high school and intermediate here and have a strong passion for business and management. I have completed multiple internships, giving me an opportunity to explore and contribute to real world problems.</p>
+        <p>Hi, I'm Kartikay Gupta, Supply Chain Manager at Birla Opus Paints, where I drive efficiency across operations and logistics. I hold an MBA from IIM Mumbai (formerly NITIE) and a B.Tech in Mechanical Engineering from IIT Patna. Originating from Kanpur, I’ve worked with multiple organizations to solve complex supply chain challenges. Passionate about business and management, I blend strategic thinking with hands-on problem-solving to deliver impactful results.</p>
         {/* <p>I am Kartikay, a passionate web developer pursuing my BTech degree at IITP. With experience in internships, projects, and active involvement in college clubs, I have developed strong programming and design skills. I actively participate in competitive programming to enhance my abilities. I am now seeking innovative opportunities to apply my expertise and contribute to impactful web development projects.</p> */}
         {/* <Link to={resumeLink} target='_blank'><Button variant="outlined" classes={{root:classes.resumeButton}}>View my Resume</Button></Link> */}
       </div>
