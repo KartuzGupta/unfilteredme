@@ -7,6 +7,20 @@ import BarberaLogo from '../../../Assets/Logos/BarberaLogo.png'
 import OpusLogo from '../../../Assets/Logos/BirlaOpusLogo.jpeg'
 
 const data = [
+    {
+    "logo": OpusLogo,
+    "link": 'https://www.birlaopus.com/',
+    "org":"Birla Opus",
+    "role":"Management Trainee - SCM",
+    "duration": "(May 2025- Present)",
+    "tech": ['Inventory', 'Automation', "Analytics"],
+    "description": [
+      "Learning and contributing towards a better Supply Chain at Birla Opus Paints"
+    ],
+    "color": 'purple',
+    "brief": "A new venture of Aditya Birla Group aiming to disrupt the paints industry, operating under their flagship company Grasim Industries",
+  },
+
   {
     "logo": OpusLogo,
     "link": 'https://www.birlaopus.com/',
